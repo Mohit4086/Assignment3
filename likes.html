@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Likes - Mohit</title>
+
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+  <style>
+    .custom-card {
+      background:#e6f7ff;
+      border-radius: 15px;
+      border: 3px solid #000000; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .custom-card:hover {
+      transform: translateY(-5px);
+    }
+    .custom-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    h1{  
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff6b6b;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(255, 107, 107, 0.3);}
+  
+    body{background: linear-gradient(to right, #f0f8ff, #e0f7fa);}
+  </style>
+</head>
+
+<body>
+    
+
+<!-- Navbar -->
+<div id="navbar"></div>
+
+<!-- Likes Section -->
+<section class="container py-5">
+  <h1 class="text-center mb-5 fw-bold animate__animated animate__fadeInDown mt-5">Things I Love</h1>
+
+  <!-- used chatgpt to made these cards -->
+
+  <div class="row g-4">
+    
+    <!-- Computer Games -->
+    <div class="col-md-6 animate__animated animate__fadeInUp">
+      <div class="card custom-card text-center p-4">
+        <div class="card-body fs-4">
+          <h3 class="fw-bold mb-4">🎮 Favorite Computer Games</h3>
+          <p><strong>Euro Truck Simulator:</strong> Driving through the peaceful highways and beautiful landscapes is a relaxing experience. I enjoy the feeling of being on the open road, delivering cargo across countries without any rush.</p>
+          <p><strong>Minecraft:</strong> Building entire worlds block by block teaches creativity and patience. Every time I play, I find new ways to create structures, explore adventures, and survive the wild.</p>
+          <p><strong>Assetto Corsa:</strong> As a racing enthusiast, Assetto Corsa gives me the closest feeling to real-life driving. The attention to detail, controls, and the thrill of perfecting each race lap keeps me hooked.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Games -->
+    <div class="col-md-6 animate__animated animate__fadeInUp">
+      <div class="card custom-card text-center p-4">
+        <div class="card-body fs-4">
+          <h3 class="fw-bold mb-4">📱 Favorite Mobile Games</h3>
+          <p><strong>PUBG:</strong> PUBG is my go-to for intense, fast-paced gaming sessions and thrilling battles. The adrenaline rush of surviving till the end and smart strategic gameplay make every match unique and exciting.</p>
+          <p><strong>WCC3:</strong> This game lets me experience the excitement of cricket on my phone. I love building my own team, planning strategies, and leading them to victory in thrilling tournaments.</p>
+          <p><strong>Stumble Guys:</strong> Whenever I need a break or a good laugh, I turn to Stumble Guys. It's fun, unpredictable, and the colorful chaos never fails to make me smile.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outdoor Game and Player -->
+    <div class="col-md-6 animate__animated animate__fadeInUp">
+      <div class="card custom-card text-center p-4">
+        <img src="assests/viratkohli.jpg" alt="Virat Kohli" class="custom-image mx-auto">
+        <div class="card-body fs-4">
+          <h3 class="fw-bold mt-4">🏏 Favorite Outdoor Game & Player</h3>
+          <p><strong>Cricket:</strong> Cricket has been my favorite sport growing up. I love how it brings people together, tests patience, and rewards smart thinking and teamwork on the field.</p>
+          <p><strong>Virat Kohli:</strong> Virat Kohli inspires me with his dedication, aggression, and commitment to excellence. Watching him play motivates me to bring the same energy and passion into my own goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Singer and Album -->
+    <div class="col-md-6 animate__animated animate__fadeInUp">
+      <div class="card custom-card text-center p-4">
+        <img src="assests/sidhu.jpg" alt="Sidhu Moose Wala" class="custom-image mx-auto">
+        <div class="card-body fs-4">
+          <h3 class="fw-bold mt-4">🎶 Favorite Singer & Album</h3>
+          <p><strong>Sidhu Moose Wala:</strong> Sidhu Moose Wala's music connects directly to emotions, blending raw storytelling with powerful beats. His songs are more than entertainment; they are a reflection of real-life struggles and dreams.</p>
+          <p><strong>Moosetape:</strong> Moosetape is a collection that showcases Sidhu's best work — deep lyrics and true artistry. It's an album I can listen to anytime and still discover new feelings in every song.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorite Food -->
+    <div class="col-md-6 mx-auto animate__animated animate__fadeInUp">
+      <div class="card custom-card text-center p-4">
+        <img src="assests/allupranthe.jpg" alt="Aloo ke Paranthe" class="custom-image mx-auto">
+        <div class="card-body fs-4">
+          <h3 class="fw-bold mt-4">🍴 Favorite Food</h3>
+          <p><strong>Aloo ke Paranthe made by Mom ❤️:</strong> Nothing matches the taste of homemade aloo ke paranthe cooked with love by Mom. The warmth, the flavors, and the memories connected to every bite make it my ultimate comfort food.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+
+   <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#navbar").load("components/navbar.html", function () {
+      $("#likes-tab").addClass("active");
+    });
+  });
+</script>
+
+</body>
+</html>
