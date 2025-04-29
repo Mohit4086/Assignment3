@@ -14,7 +14,26 @@
     <!-- Navbar Component Load -->
 <div id="navbar"></div>
 
-
+<!-- Hero Section -->
+<section class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center">
+  
+        <!-- Left Content -->
+        <div class="col-md-6 animate__animated animate__fadeInLeft">
+          <h1>Hi There,<br>I'm <span class="text-primary">Mohit</span></h1>
+          <p class="lead">I Am Into <span class="text-danger">Web Development, Poster Designing, Animation and Video Editing</span></p>
+          <a href="about.html" class="btn btn-primary mt-3">About Me</a>
+        </div>
+  
+        <!-- Right Content -->
+        <div class="col-md-6 text-center animate__animated animate__fadeInRight mt-5 mt-md-0">
+          <img src="assests/homeimage.png" alt="Profile Image" class="img-fluid" style="height: 700px; border-radius: 20px;">
+        </div>
+  
+      </div>
+    </div>
+  </section>
 
 
 <!-- Bootstrap JS -->
@@ -22,6 +41,12 @@
 
 <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    
+    <script>
+        $(document).ready(function() {
+          $("#navbar").load("components/navbar.html", function() {
+            $("#home-tab").addClass("active");
+          });
+        });
+      </script>
 </body>
 </html>
