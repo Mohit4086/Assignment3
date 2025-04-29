@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Mohit</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body style="background: linear-gradient(to right, #f0f8ff, #e0f7fa);">
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+
+    <section class="text-center py-5 px-3 animate__animated animate__fadeIn">
+        <img id="about-image" src="assests/aboutpage.png" alt="Profile Image"
+            class="rounded-circle mb-4 animate__animated animate__fadeInDown animate__faster"
+            style="width: 300px; height: 300px; object-fit: cover; border: 6px solid #ffcb6a; margin-top: 40px;">
+
+
+        <h1 class="fw-light fs-2 letter-spacing">
+            <strong class="fw-bold">PORTFOLIO</strong>
+        </h1>
+
+        <!-- About Me Paragraph -->
+        <p class="w-50 mx-auto mt-3 text-muted fs-4 fw-semibold">
+            I'm Mohit — a creative mind passionate about blending technology and design.
+            I enjoy crafting responsive websites, designing bold posters, and editing videos that bring ideas to life.
+            Every project is a chance for me to combine creativity, storytelling, and detail into something unique.
+            I believe that great work doesn’t just look good — it connects with people and leaves a lasting impact.
+            I'm always learning, evolving, and excited to create more experiences that inspire.
+        </p>
+
+        <p class="mb-0 fs-3"><strong>"Stay curious, stay creative, and never stop building."</strong></p>
+
+        <a href="likes.html" class="btn btn-outline-dark mt-4 text-uppercase fw-bold">Read More</a>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Load navbar
+            $("#navbar").load("components/navbar.html", function () {
+                $("#about-tab").addClass("active");
+            });
+
+            // When the fadeInDown animation ends bounce animation starts
+            $('#about-image').on('animationend', function () {
+                $(this).removeClass('animate__fadeInDown').addClass('animate__bounce');
+            });
+        });
+    </script>
+</body>
+
+</html>
